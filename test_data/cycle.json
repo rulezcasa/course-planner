@@ -1,0 +1,28 @@
+{
+  "name": "Cycle A-B-C",
+  "id": "CYCLE",
+  "semester_limit": 2,
+  "courses": [
+    {
+      "course_name": "Course A",
+      "course_id": "A",
+      "prereqs": [
+        "C"
+      ]
+    },
+    {
+      "course_name": "Course B",
+      "course_id": "B",
+      "prereqs": [
+        "A"
+      ]
+    },
+    {
+      "course_name": "Course C",
+      "course_id": "C",
+      "prereqs": [
+        "B"
+      ]
+    }
+  ]
+}

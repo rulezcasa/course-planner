@@ -1,0 +1,19 @@
+{
+  "name": "Bad: unknown prereq",
+  "id": "UNKNOWN_COURSE",
+  "semester_limit": 2,
+  "courses": [
+    {
+      "course_name": "Course A",
+      "course_id": "A",
+      "prereqs": []
+    },
+    {
+      "course_name": "Course B",
+      "course_id": "B",
+      "prereqs": [
+        "Z"
+      ]
+    }
+  ]
+}

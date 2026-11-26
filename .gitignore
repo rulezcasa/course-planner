@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.pdf
+course planner/
+course list/

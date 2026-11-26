@@ -1,0 +1,37 @@
+{
+  "name": "6 independent",
+  "id": "INDEPENDENT",
+  "semester_limit": 2,
+  "courses": [
+    {
+      "course_name": "Course A",
+      "course_id": "A",
+      "prereqs": []
+    },
+    {
+      "course_name": "Course B",
+      "course_id": "B",
+      "prereqs": []
+    },
+    {
+      "course_name": "Course C",
+      "course_id": "C",
+      "prereqs": []
+    },
+    {
+      "course_name": "Course D",
+      "course_id": "D",
+      "prereqs": []
+    },
+    {
+      "course_name": "Course E",
+      "course_id": "E",
+      "prereqs": []
+    },
+    {
+      "course_name": "Course F",
+      "course_id": "F",
+      "prereqs": []
+    }
+  ]
+}
