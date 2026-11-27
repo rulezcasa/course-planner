@@ -1,0 +1,66 @@
+{
+  "name": "MS in Artificial Intelligence",
+  "id": "MSAI",
+  "courses": [
+    {
+      "course_name": "Data Structures & Algorithms in Python",
+      "course_id": "CMPE 180A",
+      "prereqs": []
+    },
+    {
+      "course_name": "Math Foundations for Decision & Data Sciences",
+      "course_id": "ISE 201",
+      "prereqs": []
+    },
+    {
+      "course_name": "AI and Data Engineering",
+      "course_id": "CMPE 252",
+      "prereqs": []
+    },
+    {
+      "course_name": "Data Mining",
+      "course_id": "CMPE 255",
+      "prereqs": ["CMPE 180A"]
+    },
+    {
+      "course_name": "Web & Big Data Mining",
+      "course_id": "CMPE 256",
+      "prereqs": ["CMPE 180A"]
+    },
+    {
+      "course_name": "Machine Learning",
+      "course_id": "CMPE 257",
+      "prereqs": ["CMPE 180A"]
+    },
+    {
+      "course_name": "Deep Learning",
+      "course_id": "CMPE 258",
+      "prereqs": ["CMPE 255 OR CMPE 257"]
+    },
+    {
+      "course_name": "Special Topics: Natural Language Processing",
+      "course_id": "CMPE 297",
+      "prereqs": []
+    },
+    {
+      "course_name": "Special Topics: Computer Vision",
+      "course_id": "CMPE 297",
+      "prereqs": []
+    },
+    {
+      "course_name": "Intelligent Autonomous Systems",
+      "course_id": "CMPE 249",
+      "prereqs": []
+    },
+    {
+      "course_name": "Master Project I + Technical Writing",
+      "course_id": "CMPE 295W",
+      "prereqs": []
+    },
+    {
+      "course_name": "Master Project II",
+      "course_id": "CMPE 295B",
+      "prereqs": ["CMPE 295W"]
+    }
+  ]
+}

@@ -9,7 +9,7 @@
     {"course_name": "Fundamentals of Aerospace Engineering", "course_id": "AE 100", "prereqs": []},
     {"course_name": "Mathematical Methods for Aerospace Engineers", "course_id": "AE 105", "prereqs": []},
     {"course_name": "Space Systems Engineering", "course_id": "AE 110", "prereqs": ["AE 100"]},
-    {"course_name": "Aerospace Structures and Materials I", "course_id": "AE 112", "prereqs": []},
+    {"course_name": "Aerospace Structures and Materials I", "course_id": "AE 112", "prereqs": ["AE 119"]},
     {"course_name": "AE Structural Analysis I Problem-Solving Workshop", "course_id": "AE 112W", "prereqs": []},
     {"course_name": "Aerospace Structures and Materials II", "course_id": "AE 114", "prereqs": ["AE 112"]},
     {"course_name": "AE Structural Analysis II Problem-Solving Workshop", "course_id": "AE 114W", "prereqs": []},
