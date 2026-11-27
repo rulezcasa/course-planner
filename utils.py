@@ -1,7 +1,7 @@
 """
 Small helper functions used by the planner and the CLI.
 
-Contributor : Suharrsh
+Contributor : Harish
 
 Note for instructor : Added appropriate docstrings for logic and explanation
 """

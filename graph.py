@@ -25,12 +25,13 @@ Output :
     1. unlocks : Forward adjacency list denoting the courses unlocked after completing current. 
     2. prereqs : Reverse adjacency list denoting the prerequisites of a current course.
     
-    Building both lists at load time enables faster preqrequiste lookups for the planner without scanning the graph everytime i.e O(V+E) vs O(V.V(V+E) respectively. 
+    Building both lists at load time enables faster preqrequiste lookups for the planner without scanning the graph everytime.
 """
 def build_graph(courses, pairs):    
     course_set = set(courses)
     if len(course_set) != len(courses):
-        raise ValueError("Duplicate courseId found in courses")
+        duplicates = sorted({c for c in courses if courses.count(c) > 1})
+        raise ValueError(f"Duplicate courseId found in courses: {', '.join(duplicates)}")
     unlocks = {course: [] for course in courses}
     prereqs = {course: [] for course in courses}
     seen_pairs = set()
