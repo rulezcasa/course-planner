@@ -17,7 +17,7 @@ sys.path.insert(0, ROOT)
 
 from graph import CycleError, build_graph                                        # noqa: E402
 from loader import load_program, read_program_file                               # noqa: E402
-from planner import Student, needed_courses, plan_semesters                      # noqa: E402
+from planner import Student, check_rank, needed_courses, plan_semesters                    # noqa: E402
 from utils import graduation_term, next_term                                     # noqa: E402
 
 COMPLETED_COLOR = "#95d5b2"
@@ -102,10 +102,13 @@ if not targets:
     st.graphviz_chart(to_dot(program.courses, program.unlocks, program.names, fill), width="stretch")
     st.stop()
 
-default_rank = [c for c in program.order if c in needed]
-rank_text = st.text_area("Ranking of needed courses (comma-separated, edit to try your own)",
-                         ", ".join(default_rank))
-rank = [c.strip() for c in rank_text.split(",") if c.strip()]
+rank = st.sidebar.multiselect("Rank the needed courses (pick them in order of preference, first = highest)",
+                              needed, format_func=label)  # multiselect keeps the order courses were picked in
+st.sidebar.caption(f"Ranked {len(rank)} of {len(needed)} needed courses.")
+try:
+    check_rank(rank, program.prereqs, rank)               # live check of the order so far (missing courses checked at planning)
+except ValueError as error:
+    st.sidebar.error(f"Invalid ranking: {error}")
 
 settings = (path, tuple(completed), tuple(targets), limit, start_term, tuple(rank))
 if st.sidebar.button("Plan semesters"):
