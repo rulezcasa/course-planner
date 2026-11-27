@@ -2,6 +2,20 @@
 
 Models a degree program as a directed acyclic graph (DAG) of courses and prerequisites, then builds a semester-by-semester plan to a student's target courses and reports the graduation term.
 
+## Index
+
+- [User flow](#user-flow)
+- [Core algorithms and asymptotic runtime](#core-algorithms-and-asymptotic-runtime)
+- [Project structure](#project-structure)
+- [Requirements](#requirements)
+- [Run](#run)
+- [Reproducing a representative test](#reproducing-a-representative-test)
+- [Demo video](https://drive.google.com/file/d/10sSacR5DRO4Vm-hcsSPcNDaN_b3QaMCA/view?usp=sharing)
+- [Acknowledgments](#acknowledgments)
+- [Data Access Statement](#data-access-statement)
+- [AI Usage Statement](#ai-usage-statement)
+- [Contributions](#contributions)
+
 ## User flow
 
 1. **Select a program.**
